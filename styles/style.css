@@ -112,7 +112,9 @@ main {
     max-width: 1140px;
     margin: 0 auto;  
 }
-
+main section {
+    margin-top: 130px;
+}
 /* ABout section */
 .about{
     background-color: var(--bg-secondary);
@@ -135,4 +137,35 @@ main {
 .item-description{
     font-weight: bold;
     margin: 0.125rem;
+}
+
+/* what i do seciton  */
+
+.skills{
+    text-align: center;
+}
+
+.skills-container{
+    display: flex;
+    gap: 24px; 
+}
+
+.skill-card{
+    padding:30px; 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); 
+    /* filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.1)); */
+    text-align: left;
+    border-radius: 8px;
+}
+.skill-section-title{
+    margin-top: 130px;
+}
+.skill-section-description{
+    margin-bottom: 50px;
+}
+
+.skill-description{
+    font-weight: 400;
+    color: #757575;
+    line-height: 30px;
 }
