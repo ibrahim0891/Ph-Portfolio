@@ -83,7 +83,6 @@ nav li a {
     justify-content: space-around;
     align-items: space-between;
     margin: 0 35px 0 230px;
-    flex-wrap: wrap;
 }
 
 .banner-content {
@@ -132,7 +131,6 @@ main section {
     justify-content: space-around;
     align-items: center;
     margin: 2rem 0;
-    flex-wrap: wrap;
 }
 .item-title {
     margin: 0;
@@ -151,7 +149,6 @@ main section {
 
 .skills-container {
     display: flex;
-    flex-wrap: wrap;
     gap: 24px;
 }
 
@@ -180,7 +177,6 @@ main section {
 .resume-container {
     display: flex;
     gap: 2rem;
-    flex-wrap: wrap;
 }
 .resume-column-title {
     font-size: 30px;
@@ -225,7 +221,6 @@ footer {
 }
 .footer-container {
     display: flex;
-    flex-wrap: wrap;
     gap: 120px;
 }
 .footer-section-title {
@@ -234,13 +229,13 @@ footer {
     margin:28px 0 ; 
 }
 
-.footer-column p {
+.footer-left p {
     font-weight: 400;
     color: #757575;
     line-height: 30px;
 }
 
-.footer-column form input , footer textarea {
+.footer-right form input , footer textarea {
     padding: 24px 30px ; 
     font-size: 16px;
     color: #767676; 
