@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+* {
+    font-family: "Lexend";
+}
+/* Shared Style  */
+:root {
+    --text-primary: #fd6e0a;
+    --dark-2: #474747;
+}
+.btn-primary {
+    background-color: var(--text-primary);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 18px 36px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Nav Styles */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 200px;
+}
+
+.nav-title {
+    font-weight: bolder;
+    font-size: 45px;
+}
+.nav-title span {
+    color: var(--text-primary);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin-right: 50px;
+}
+nav li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--dark-2);
+}
+/* header */
+.header {
+    background-image: url("../images/developer.png"),
+        url("../images/header_bg.png");
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+}
+
+/* banner styles */
+
+.banner {
+    display: flex;
+    justify-content: space-around; 
+    align-items: space-between;
+    margin: 0 35px 0 230px;
+}
+
+.banner-content { 
+    max-width: 580px;
+}
+.banner-greeting {
+    font-size: 45px;
+    font-weight: 600;
+}
+.banner-title {
+    font-size: 85px;
+}
+.banner-description {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.banner-profile-picture {
+   width: auto;
+   height: 676px;
+}
