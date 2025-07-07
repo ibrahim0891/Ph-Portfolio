@@ -229,13 +229,13 @@ footer {
     margin:28px 0 ; 
 }
 
-.footer-left p {
+.footer-column p {
     font-weight: 400;
     color: #757575;
     line-height: 30px;
 }
 
-.footer-right form input , footer textarea {
+.footer-column form input , footer textarea {
     padding: 24px 30px ; 
     font-size: 16px;
     color: #767676; 
