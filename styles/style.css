@@ -4,12 +4,12 @@
     font-family: "Lexend";
 }
 /* Shared Style  */
-body{
+body {
     margin: 0;
 }
 :root {
     --text-primary: #fd6e0a;
-    --bg-secondary : #FFF8F3; 
+    --bg-secondary: #fff8f3;
     --dark-2: #474747;
 }
 .btn-primary {
@@ -22,12 +22,13 @@ body{
     border: none;
 }
 
-.section-title{
+.section-title {
     font-size: 35px;
     font-weight: bold;
-    color: var(--dark-2)
+    color: var(--dark-2);
+    text-align: center;
 }
-.section-description{
+.section-description {
     font-size: 18px;
     color: #757575;
     line-height: 30px;
@@ -72,25 +73,26 @@ nav li a {
         url("../images/header_bg.png");
     background-repeat: no-repeat;
     background-position: top 3rem left 2rem, bottom right;
-    background-color:  var(--bg-secondary);
+    background-color: var(--bg-secondary);
 }
 
 /* banner styles */
 
 .banner {
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-around;
     align-items: space-between;
     margin: 0 35px 0 230px;
+    flex-wrap: wrap;
 }
 
-.banner-content { 
+.banner-content {
     max-width: 580px;
 }
 .banner-greeting {
     font-size: 45px;
     font-weight: 600;
-    margin:2rem 0 ; 
+    margin: 2rem 0;
 }
 .banner-title {
     font-size: 85px;
@@ -99,24 +101,25 @@ nav li a {
 .banner-description {
     font-size: 18px;
     line-height: 30px;
-    margin: 2rem 0 ;
+    margin: 2rem 0;
 }
 
 .banner-profile-picture {
-   width: auto;
-   height: 676px;
+    width: auto;
+    height: 676px;
 }
 
 /* main styles */
-main {
+main,
+.footer-container {
     max-width: 1140px;
-    margin: 0 auto;  
+    margin: 0 auto;
 }
 main section {
     margin-top: 130px;
 }
 /* ABout section */
-.about{
+.about {
     background-color: var(--bg-secondary);
     border-radius: 10px;
     text-align: center;
@@ -124,48 +127,125 @@ main section {
     margin-top: 130px;
 }
 
-.about-items{
+.about-items {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     margin: 2rem 0;
+    flex-wrap: wrap;
 }
-.item-title{
-    margin:  0; 
+.item-title {
+    margin: 0;
     color: #757575;
 }
-.item-description{
+.item-description {
     font-weight: bold;
     margin: 0.125rem;
 }
 
 /* what i do seciton  */
 
-.skills{
+.skills {
     text-align: center;
 }
 
-.skills-container{
+.skills-container {
     display: flex;
-    gap: 24px; 
+    flex-wrap: wrap;
+    gap: 24px;
 }
 
-.skill-card{
-    padding:30px; 
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); 
+.skill-card {
+    padding: 30px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
     /* filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.1)); */
     text-align: left;
     border-radius: 8px;
 }
-.skill-section-title{
+.skill-section-title {
     margin-top: 130px;
 }
-.skill-section-description{
+.skill-section-description {
     margin-bottom: 50px;
 }
 
-.skill-description{
+.skill-description {
     font-weight: 400;
     color: #757575;
     line-height: 30px;
 }
+
+/* Resume section */
+
+.resume-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.resume-column-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+.resume-column hr {
+    height: 0;
+    margin: 30px 0;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+.experience-title {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+}
+.experience-subtitle {
+    font-size: 20px;
+    color: #757575;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.experience-description {
+    font-weight: 400;
+    color: #757575;
+    line-height: 30px;
+}
+
+/* download cv button */
+
+.cv-download {
+    display: block;
+    margin: 50px auto;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--bg-secondary);
+    padding: 130px 0;
+    border-top-right-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+}
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 120px;
+}
+.footer-section-title {
+    font-size: 35px;
+    font-weight: bold;
+    margin:28px 0 ; 
+}
+
+.footer-column p {
+    font-weight: 400;
+    color: #757575;
+    line-height: 30px;
+}
+
+.footer-column form input , footer textarea {
+    padding: 24px 30px ; 
+    font-size: 16px;
+    color: #767676; 
+    margin-bottom: 24px ;
+    width: 461px;
+    border:none; 
+}
+
